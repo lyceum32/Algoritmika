@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Algoritmika AutoTyper",
+  "version": "1.0",
+  "description": "Автоматическая печать текста в заданиях Algoritmika",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://learn.algoritmika.su/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://learn.algoritmika.su/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Algoritmika AutoTyper"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

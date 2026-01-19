@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            width: 280px;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+            background: #1a1a2e;
+            color: #fff;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 8px 0;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background: #764ba2;
+        }
+        .setting {
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 5px;
+        }
+        input[type="number"] {
+            width: 60px;
+            padding: 5px;
+            margin-left: 10px;
+            background: #2c2c3e;
+            color: white;
+            border: 1px solid #667eea;
+            border-radius: 4px;
+        }
+        label {
+            font-size: 14px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .subtitle {
+            font-size: 11px;
+            color: #8c8ca1;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">🚀 Algoritmika Typer</div>
+        <div class="subtitle">Автоматическая печать</div>
+    </div>
+    
+    <button class="btn" id="startBtn">🚀 Автопечать</button>
+    <button class="btn" id="directBtn">⚡ Прямая вставка</button>
+    <button class="btn" id="virtualBtn">⌨️ Виртуальная</button>
+    
+    <div class="setting">
+        <label>Задержка: <input type="number" id="delay" value="50" min="10" max="1000"> мс</label>
+    </div>
+    
+    <div class="setting">
+        <label><input type="checkbox" id="autoStart" checked> Автозапуск</label>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
