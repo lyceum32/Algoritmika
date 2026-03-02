@@ -1,7 +1,8 @@
 # 📚 Algoritmika Typer
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Version](https://img.shields.io/badge/version-1.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-yellow.svg)
+![Mozilla Add-on Version](https://img.shields.io/amo/v/algoritmika)
 
 Браузерное расширение, которое помогает учиться на платформе Алгоритмика
 
